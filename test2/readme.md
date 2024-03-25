@@ -19,8 +19,9 @@ sudo make install
 ```
 
 #### Script Explaination:
-The first two lines(from read -p) takes input(r rev version) and substitutes in svn checkout line as a variable. The svn checkouts trunk directory from R revision version 86123. After that `mkdir -p $BUILDDIR` creates a empty parent directory using the ENV var BUILDDIR. And changes directory to $BUILDDIR which is `/workspaces/r-dev-env/build` and also exit 1 is mentioned using || which exits program if parent directory is not created before changing directory(just for exceptional handling).
-The $TOP_SRCDIR/configure script inside svn checkout directory($TOP_SRCDIR) which is `/workspaces/r-dev-env/svn` is used to build R inside Build directory($BUILDDIR). And make and sudo make install does the installation and configuration of R using configure script inside build directory($BUILDDIR).
+- The first two lines(from read -p) takes input(r rev version) and substitutes in svn checkout line as a variable. The svn checkouts trunk directory from R revision version 86123. 
+- After that `mkdir -p $BUILDDIR` creates a empty parent directory using the ENV var BUILDDIR. And changes directory to $BUILDDIR which is `/workspaces/r-dev-env/build` and also exit 1 is mentioned using || which exits program if parent directory is not created before changing directory(just for exceptional handling).
+- The $TOP_SRCDIR/configure script inside svn checkout directory($TOP_SRCDIR) which is `/workspaces/r-dev-env/svn` is used to build R inside Build directory($BUILDDIR). And make and sudo make install does the installation and configuration of R using configure script inside build directory($BUILDDIR).
 
 #### ScreenShot R Build
 ![SS1](https://github.com/StarTrooper08/r-dev-env-test/assets/72031540/19233200-d9ca-4d8d-9888-46f38293487d)
