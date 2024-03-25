@@ -4,12 +4,11 @@ tasks:
   - init: |
       python -m pip install --upgrade pip
       python -m pip install mkdocs
-      
-      
-    command: |
       mkdocs new mkdocs-demo
-      cd mkdocs-demo
-      mkdocs serve
+
+    command: |
+        cd mkdocs-demo
+        mkdocs serve
   
 ports:
   - port: 8000
