@@ -1,4 +1,4 @@
-#### Test Case 1 Breakdown :
+#### Test Case 1(Easy) Breakdown :
 
 1. SS of R:(not attached)
 ![image](https://github.com/StarTrooper08/r-dev-env-test/assets/72031540/a0c36a79-32f3-4f36-b47a-4a46d2435ac5)
