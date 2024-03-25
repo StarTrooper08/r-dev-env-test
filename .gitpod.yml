@@ -3,17 +3,18 @@ image: gitpod/workspace-full:latest
 tasks:
   - init: |
       python -m pip install --upgrade pip
-      python -m pip install Django
-      python manage.py migrate
+      python -m pip install mkdocs
+      mkdocs new mkdocs-demo
+      
     command: |
-      python manage.py runserver
+      cd mkdocs-demo
+      mkdocs serve
   
 ports:
-  - port: 5000
+  - port: 8000
     onOpen: open-preview
-
+    
 vscode:
-  extensions:
-   - REditorSupport.r
-   - MS-vsliveshare.vsliveshare
-   - ms-python.python
+   extensions:
+     - REditorSupport.r
+
