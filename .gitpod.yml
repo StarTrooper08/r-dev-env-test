@@ -13,7 +13,7 @@ ports:
     onOpen: open-preview
 
 vscode:
- extensions:
+  extensions:
    - REditorSupport.r
    - MS-vsliveshare.vsliveshare
    - ms-python.python
