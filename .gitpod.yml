@@ -9,6 +9,7 @@ tasks:
     command: |
         cd mkdocs-demo
         mkdocs serve
+        gp validate
   
 ports:
   - port: 8000
