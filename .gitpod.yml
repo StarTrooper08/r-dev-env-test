@@ -1,21 +1,8 @@
-image: gitpod/workspace-full:latest
+image: 
+  file: .gitpod.Dockerfile
 
-tasks:
-  - init: |
-      python -m pip install --upgrade pip
-      python -m pip install mkdocs
-      mkdocs new mkdocs-demo
-
-    command: |
-        cd mkdocs-demo
-        mkdocs serve
-        gp validate
-  
-ports:
-  - port: 8000
-    onOpen: open-preview
-    
 vscode:
    extensions:
      - REditorSupport.r
+     - johnstoncode.svn-scm
 
