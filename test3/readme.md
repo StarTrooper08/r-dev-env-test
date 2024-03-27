@@ -81,3 +81,52 @@ Also Added R extension in gitpod config for testing purpose
 
 **Changes Explaination :**
 Here I've tried to use directly the base image in gitpod yml instead of mentioning it in Dockerfile and used the tasks argument to install mkdocs and also opened port 8000 using ports argument in gitpod yml.
+
+
+#### Testing Gitlab and Gitpod
+**About the Test:**
+Testing minimal R installation(Docker build) with gitpod/workspace full image.
+
+Test Case Gitlab repo : https://gitlab.com/AtharvaS08/r-dev-test/
+
+Gitpod Link : https://gitpod.io/#gitlab.com/AtharvaS08/r-dev-test/
+
+
+
+**Some oberservation and difference in image building compare to github codespace and gitpod workspace:**
+The Gitpod Workspace needs root privilege to do installation like R and other libraries unlike Github Codespace. The Codespace creates a virtual layer inbetween and therefore requires less privilege for installation.
+
+
+**Steps to use this Gitpod Workspace**
+
+1. Sign Up for Gitpod
+2. Inside Gitlab User Preference set Gitpod IDE for editing
+(User Settings -> Preference -> Integrations -> Gitpod IDE checkbox)
+3. Fork the repo(https://gitlab.com/AtharvaS08/r-dev-test/)
+4. Click on Edit button above repo file (beside Code button(Green)).
+5. Select Gitpod IDE.
+6. Will be Redirected to Gitpod Dashboard and Image Building will start after couples of minutes Workspace will start with minimal R installation present in it.
+
+
+**Direct Method(without gitlab acc)**
+
+[![Gitpod](https://img.shields.io/badge/gitpod-f06611.svg?style=for-the-badge&logo=gitpod&logoColor=white)](https://gitpod.io/#gitlab.com/AtharvaS08/r-dev-test/)
+
+This will need just Gitpod account.
+
+**Screenshots:**
+
+![rgitlab](https://github.com/StarTrooper08/r-dev-env-test/assets/72031540/b6c18399-cb5a-4132-884b-c8491f11427d)
+
+![rgitlab1](https://github.com/StarTrooper08/r-dev-env-test/assets/72031540/fda8c377-a87c-407a-b148-998a3984cabb)
+
+![rgitlab2](https://github.com/StarTrooper08/r-dev-env-test/assets/72031540/98c9ff31-6815-46c2-8991-9c2a5f2435e2)
+
+![rgitlab3](https://github.com/StarTrooper08/r-dev-env-test/assets/72031540/5cae1ee8-5eed-48a7-80a4-7439e08f27dd)
+
+![rgitlab4](https://github.com/StarTrooper08/r-dev-env-test/assets/72031540/6f130c4c-e704-4e21-a078-79ab36c41663)
+
+
+
+
+
